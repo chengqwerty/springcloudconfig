@@ -25,3 +25,5 @@ spring:
           uri: http://cxytiandi.com
           predicates:
             - Path=/course
+login:
+  url: "/system/login"
