@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: route1
+          uri: http://172.18.118.15:8801/
+          predicates:
+            - Path=/tree/**
+        - id: route2
+          uri: http://127.0.0.1:8901
+          predicates:
+            - Path=/cedar/**
+        - id: route3
+          uri: http://people.com.cn
+          predicates:
+            - Path=/people
+        - id: route4
+          uri: http://cxytiandi.com
+          predicates:
+            - Path=/course
